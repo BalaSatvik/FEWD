@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+h1 {
+    font-size: 3em;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+#about,
+#academics,
+#skills,
+#projects,
+#contact {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+form label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>N. S. V. S Bala Satvik</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#academics">Academics</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="about">
+        <h2><u>About Me</u></h2>
+        <p>I am an Full stack web developer.</p>
+    </section>
+
+    <section id="academics">
+        <h2><u>Academics</u></h2>
+        <table class="table">
+            <tr>
+                <th>School/College Name</th>
+                <th>Course</th>
+                <th>Percentage</th>
+            </tr>
+            <tr>
+                <td>Keshav Memorial Institute of Technology</td>
+                <td>CSE</td>
+                <td>8.86/10</td>
+            </tr>
+            <tr>
+                <td>Narayana Junior College</td>
+                <td>MPC</td>
+                <td>94.2/100</td>
+            </tr>
+            <tr>
+                <td>Narayana High School</td>
+                <td>SSC</td>
+                <td>9.8/10</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="skills">
+        <h2><u>Skills</u></h2>
+        <h4>Programming Skills :</h4>
+        <ul>
+            <li>JAVA</li>
+            <li>Python</li>
+            <li>C/C++</li>
+            <li>MERN</li>
+        </ul>
+        <h4>Soft Skills :</h4>
+        <ul>
+            <li>Time Management</li>
+            <li>Teamwork</li>
+            <li>Problem Solving</li>
+            <li>Documentation</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2><u>Projects</u></h2>
+        <h3>Face Recognition and other biometrics</h3>
+        <p>The project is based on deep learning. The main aim of the project is to predict the
+            human faces with their respective names.
+        </p>
+        <p>This project includes gathering images, labelling images and
+            training those images to obtain accurate results.
+        </p>
+        <h4>Technologies Used</h4>
+        <ul>
+            <li>YOLO V5</li>
+            <li>Deep Learning</li>
+            <li>MERN</li>
+        </ul>
+        <h3>World Population and growth analysis</h3>
+        <p> Analyzing the world population growth per day, per month and per year in various countries.</p>
+        <p>Also analyzing the birth rate and death rate of people in each country.</p>
+        <h4>Technologies Used</h4>
+        <ul>
+            <li>Kaggle Datasets</li>
+            <li>Google colab notebook</li>
+            <li>Numpy</li>
+            <li>Pandas</li>
+            <li>Other Python Libraries</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2><u>Contact Me</u></h2>
+        <p>Reach me out by filling the form</p>
+        <form method="post">
+            <label for="name">Name :</label>&nbsp;
+            <input id="name" placeholder="Enter Name"/><br><br>
+            <label for="number">Phone Number :</label>&nbsp;
+            <input id="number" placeholder="Enter Phone Number"/><br><br>
+            <label for="mail">Email :</label>&nbsp;
+            <input id="mail" placeholder="Enter Email" /><br><br>
+            <button type="button">Submit</button>
+        </form>
+    </section>
+</main>
+</body>
+</html>
